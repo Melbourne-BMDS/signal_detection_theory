@@ -1,0 +1,16 @@
+name: md3nlp_2020
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - numpy
+  - pandas
+  - pip
+  - matplotlib
+  - seaborn
+  - jinja2
+  - ipywidgets
+  - ipython
+  - pip:
+    - RISE
+
