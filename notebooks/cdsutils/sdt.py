@@ -73,9 +73,9 @@ class ExploreStats(ipw.VBox):
         self.p1a.observe(self.a_changed, 'value')
         self.p1b = ipw.FloatRangeSlider(min=-5, max=5, value=[-2,2])
         self.p1b.observe(self.b_changed, 'value')
-        self.na = ipw.IntSlider(min=20, max=5000, value=100)
+        self.na = ipw.IntSlider(min=20, max=10000, value=100)
         self.na.observe(self.a_changed, 'value')
-        self.nb = ipw.IntSlider(min=20, max=5000, value=100)
+        self.nb = ipw.IntSlider(min=20, max=10000, value=100)
         self.nb.observe(self.b_changed, 'value')
         
         self.p2a_μ = ipw.FloatSlider(min=-5, max=5, value=0)
@@ -194,6 +194,8 @@ class ExploreStats(ipw.VBox):
             sns.distplot(self.pos,ax=a1, kde=False)
             a1.axvline(t, c='k')
             a2.set_aspect("equal")
+            a2.set_xlabel("FPF (1-Spec.)")
+            a2.set_ylabel("TPF (Sens.)"
             a2.add_artist(dot)
             plt.show(f1)
             
