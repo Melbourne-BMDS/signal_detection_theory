@@ -195,7 +195,7 @@ class ExploreStats(ipw.VBox):
             a1.axvline(t, c='k')
             a2.set_aspect("equal")
             a2.set_xlabel("FPF (1-Spec.)")
-            a2.set_ylabel("TPF (Sens.)"
+            a2.set_ylabel("TPF (Sens.)")
             a2.add_artist(dot)
             plt.show(f1)
             

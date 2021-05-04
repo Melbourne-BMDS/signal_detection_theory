@@ -1,6 +1,6 @@
 # signal_detection_theory
 
-This repository contains simple Python-based ntoebooks for exploring signal detection theory.
+This repository contains simple Python-based notebooks for exploring signal detection theory.
 
 &copy; Brian E. Chapman, Ph.D.
 
