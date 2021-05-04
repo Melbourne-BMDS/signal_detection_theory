@@ -20,11 +20,11 @@ dt2 = Template(
 <table>
    <tr>
    {% for key,_ in data.items() %}
-        <th style="text-align:left"> "|" {{ key }} "|"</th>
+        <th style="text-align:left"> | {{ key }} |</th>
    {% endfor %}
    </tr>
    {% for _,value in data.items() %}
-        <td style="text-align:left"> "|" {{ value }} "|"</td>
+        <td style="text-align:left"> | {{ value }} |</td>
    {% endfor %}
    </tr>
 </table>"""
